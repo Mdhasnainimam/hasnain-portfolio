@@ -57,7 +57,7 @@ export default function Hero({ openLinkModal }) {
 
           {/* Subtitle */}
           <p className="hero-description">
-            Computer Science & Engineering Graduate (<strong>2022 Pass-Out</strong>) with <strong>3+ Years Experience</strong> across Aerospace Hardware & Software Integration Testing (<strong>HAL - Kiran Mk II Autopilot Systems</strong>), Full-Stack Web Engineering (<strong>5 Websites Built</strong>), Mobile App Development (<strong>UEEindia on Google Play Store</strong>), IT Support, and <strong>SANY Heavy Equipment Technical Audits</strong>.
+            Computer Science & Engineering Graduate (<strong>2022 Pass-Out</strong>) with <strong>3+ Years Experience</strong> across Aerospace Hardware & Software Integration Testing (<strong>HAL - Kiran Mk II Autopilot Systems</strong>), Full-Stack Web Engineering (<strong>6 Websites Built</strong>), Mobile App Development (<strong>UEEindia on Google Play Store</strong>), IT Support, and <strong>SANY Heavy Equipment Technical Audits</strong>.
           </p>
 
           {/* Action CTAs */}

@@ -15,6 +15,7 @@ import miningImg from './assets/mining.jpg';
 import skoriyatechImg from './assets/skoriyatech.jpg';
 import starsImg from './assets/starstravels.jpg';
 import mythriImg from './assets/mythritravels.jpg';
+import welfareImg from './assets/universalwelfare.jpg';
 import app1Img from './assets/app1.jpg';
 
 export default function App() {
@@ -115,6 +116,22 @@ export default function App() {
     },
     {
       id: 'p6',
+      badge: 'Website #6',
+      title: 'Universal Welfare Trust',
+      subtitle: 'Official Web Platform for Universal Welfare Trust non-profit social organization. Features community welfare initiatives, donor portal, and event management.',
+      image: welfareImg,
+      liveUrl: 'https://universalwelfaretrust.com/',
+      category: 'website',
+      tech: ['React.js', 'TailwindCSS', 'JavaScript (ES6+)', 'Donor Portal', 'SEO'],
+      features: [
+        'Responsive non-profit web platform for Universal Welfare Trust community programs',
+        'Interactive causes showcase, education & medical assistance initiatives catalog',
+        'Donor inquiry & volunteer registration form with automated email alerts',
+        'Optimized cross-device design with high accessibility & SEO score'
+      ]
+    },
+    {
+      id: 'p7',
       badge: 'Live Play Store Mobile App',
       title: 'UEEindia Mobile Application',
       subtitle: 'Live Mobile Application published on Google Play Store under UEEindia. Enables mining device tracking & equipment access on Android smartphones.',
