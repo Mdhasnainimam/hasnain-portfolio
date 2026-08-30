@@ -153,9 +153,9 @@ export default function App() {
     if (savedLinks) {
       try {
         const parsed = JSON.parse(savedLinks);
-        return initialProjects.map((p, idx) => ({
+        return initialProjects.map((p) => ({
           ...p,
-          liveUrl: parsed[`p${idx + 1}`] || p.liveUrl
+          liveUrl: parsed[p.id] || p.liveUrl
         }));
       } catch (e) {
         return initialProjects;
