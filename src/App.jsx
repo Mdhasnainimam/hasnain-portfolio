@@ -153,6 +153,10 @@ export default function App() {
     if (savedLinks) {
       try {
         const parsed = JSON.parse(savedLinks);
+        if (!parsed.p6 || !parsed.p7) {
+          localStorage.removeItem('hasnain_project_links');
+          return initialProjects;
+        }
         return initialProjects.map((p) => ({
           ...p,
           liveUrl: parsed[p.id] || p.liveUrl
