@@ -334,12 +334,32 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   .section-title {
-    font-size: 2rem;
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+  .section-subtitle {
+    font-size: 0.95rem;
   }
   .container {
-    padding: 0 1rem;
+    padding: 0 0.85rem;
+  }
+  .modal-content {
+    padding: 1.25rem;
+    max-height: 95vh;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  .section {
+    padding: 2.25rem 0;
+  }
+  .section-title {
+    font-size: 1.65rem;
   }
 }
