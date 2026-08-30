@@ -1,33 +1,25 @@
-# 🌐 DNS Settings for imam.skoriyatech.com
+# 🌐 Fixed DNS CNAME Target for imam.skoriyatech.com
 
-Add this exact **CNAME** record to the DNS settings of `skoriyatech.com` to make `https://imam.skoriyatech.com/` live!
-
----
-
-## 📌 DNS Record Details
-
-| Setting / Field | Value to Enter |
-| :--- | :--- |
-| **Record Type** | **`CNAME`** |
-| **Name (Host)** | **`imam`** *(or `imam.skoriyatech.com`)* |
-| **Target (Points to)** | **`hasnain-portfolio.pages.dev`** |
-| **Proxy status** | **Proxied** *(Orange Cloud 🟧 on Cloudflare)* |
-| **TTL** | **Auto** |
+To fix the `"Content for CNAME record is invalid"` error, remove `https://` and `/#projects` from the Target field!
 
 ---
 
-## 📝 Step-by-Step Instructions in Cloudflare DNS
+## 📌 Correct CNAME Record Values
 
-1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com/) and select **`skoriyatech.com`**.
-2. Click **DNS** -> **Records** on the left menu.
-3. Click **Add Record**.
-4. Fill in:
-   - **Type**: `CNAME`
-   - **Name**: `imam`
-   - **Target**: `hasnain-portfolio.pages.dev`
-   - **Proxy status**: `Proxied` (Orange Cloud 🟧)
-5. Click **Save**!
+| Field / Setting | Value to Enter | Notes |
+| :--- | :--- | :--- |
+| **Type** | **`CNAME`** | Select CNAME from dropdown |
+| **Name** | **`imam`** | Hostname prefix |
+| **Target** | **`hasnain-portfolio.hasnainimam2026.workers.dev`** | **No `https://` or `/#projects`** |
+| **Proxy status** | **Proxied** | Orange Cloud 🟧 enabled |
+| **TTL** | **Auto** | Default |
 
 ---
 
-🎉 **Done!** Cloudflare will automatically generate a free SSL certificate and your portfolio will be live globally at [`https://imam.skoriyatech.com/`](https://imam.skoriyatech.com/)!
+## ❌ Why it failed earlier:
+- **Incorrect Target**: `https://hasnain-portfolio.hasnainimam2026.workers.dev/#projects` (DNS target cannot contain `https://` or URL paths like `/#projects`).
+- **Correct Target**: `hasnain-portfolio.hasnainimam2026.workers.dev`
+
+---
+
+🎉 Click **Save** in Cloudflare DNS, and `https://imam.skoriyatech.com/` will be live!
