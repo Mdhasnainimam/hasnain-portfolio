@@ -27,8 +27,10 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Add CNAME for Custom Subdomain
-        run: echo "imam.skoriyatech.com" > dist/CNAME
+      - name: Add CNAME and .nojekyll for Custom Subdomain
+        run: |
+          echo "imam.skoriyatech.com" > dist/CNAME
+          touch dist/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
