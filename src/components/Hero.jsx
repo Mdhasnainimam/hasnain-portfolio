@@ -12,7 +12,7 @@ import {
   Check,
   MessageSquare
 } from 'lucide-react';
-import avatarImg from '../assets/avatar.jpg';
+const avatarImg = './avatar.jpg';
 import './Hero.css';
 
 export default function Hero({ openLinkModal }) {

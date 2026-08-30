@@ -10,13 +10,13 @@ import ExperienceTimeline from './components/ExperienceTimeline';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-import ueeindiaImg from './assets/ueeindia.jpg';
-import miningImg from './assets/mining.jpg';
-import skoriyatechImg from './assets/skoriyatech.jpg';
-import starsImg from './assets/starstravels.jpg';
-import mythriImg from './assets/mythritravels.jpg';
-import welfareImg from './assets/universalwelfare.jpg';
-import app1Img from './assets/app1.jpg';
+const ueeindiaImg = './ueeindia.jpg';
+const miningImg = './mining.jpg';
+const skoriyatechImg = './skoriyatech.jpg';
+const starsImg = './starstravels.jpg';
+const mythriImg = './mythritravels.jpg';
+const welfareImg = './universalwelfare.jpg';
+const app1Img = './app1.jpg';
 
 export default function App() {
   const [theme, setTheme] = useState('dark');
