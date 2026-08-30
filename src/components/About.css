@@ -109,8 +109,21 @@
 }
 
 @media (max-width: 576px) {
+  .about-story-card {
+    padding: 1.25rem;
+  }
   .key-details-list {
     grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .about-action-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .about-action-row .btn {
+    width: 100%;
+    justify-content: center;
   }
   .highlights-grid {
     grid-template-columns: 1fr;

@@ -158,4 +158,21 @@
   .projects-grid {
     grid-template-columns: 1fr;
   }
+  .filter-tabs {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .filter-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  .card-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.6rem;
+  }
+  .card-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

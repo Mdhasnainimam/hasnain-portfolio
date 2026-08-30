@@ -128,13 +128,22 @@ export default function Navbar({ theme, toggleTheme, openLinkModal }) {
                   openLinkModal();
                 }}
               >
-                <Link2 size={16} /> Paste Website Links
+                <Link2 size={16} /> Update Website Links
               </button>
               <a 
-                href="mailto:hasnainimam2026@gmail.com" 
+                href="https://wa.me/918271565060" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-outline btn-sm w-full"
+                style={{ borderColor: '#10b981', color: '#10b981' }}
+              >
+                <MessageSquare size={16} /> WhatsApp Chat
+              </a>
+              <a 
+                href="tel:8271565060" 
                 className="btn btn-primary btn-sm w-full"
               >
-                <Send size={16} /> Email Hasnain
+                <PhoneCall size={16} /> Call: +91 8271565060
               </a>
             </div>
           </nav>

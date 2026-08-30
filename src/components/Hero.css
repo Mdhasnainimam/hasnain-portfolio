@@ -282,15 +282,56 @@
   }
   .stats-ribbon {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 }
 
 @media (max-width: 576px) {
+  .hero-section {
+    padding-top: 6.5rem;
+    padding-bottom: 2.5rem;
+  }
   .hero-title {
     font-size: 2.1rem;
   }
+  .hero-author-intro {
+    flex-wrap: wrap;
+  }
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .quick-contact-chips {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .contact-chip {
+    width: 100%;
+    justify-content: center;
+  }
+  .stats-ribbon-container {
+    margin-top: 2rem;
+  }
   .stats-ribbon {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.25rem 1rem;
+    gap: 1rem;
+  }
+  .stat-value {
+    font-size: 1.8rem;
+  }
+  .stat-label {
+    font-size: 0.78rem;
   }
 }

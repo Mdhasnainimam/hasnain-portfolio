@@ -117,8 +117,16 @@
   }
   .timeline-node {
     left: 0;
+    width: 34px;
+    height: 34px;
   }
   .timeline-item {
-    padding-left: 54px;
+    padding-left: 46px;
+  }
+  .timeline-card {
+    padding: 1.15rem;
+  }
+  .timeline-role {
+    font-size: 1.15rem;
   }
 }
