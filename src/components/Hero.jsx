@@ -86,6 +86,17 @@ export default function Hero({ openLinkModal }) {
 
           {/* Quick Copy Contact Chips */}
           <div className="quick-contact-chips">
+            <a 
+              href="https://imam.skoriyatech.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="contact-chip"
+              style={{ textDecoration: 'none', borderColor: 'var(--accent-cyan)' }}
+            >
+              <Globe size={14} className="chip-icon" />
+              <span>imam.skoriyatech.com</span>
+            </a>
+
             <div className="contact-chip" onClick={() => handleCopy('hasnainimam2026@gmail.com', 'email')}>
               <Mail size={14} className="chip-icon" />
               <span>hasnainimam2026@gmail.com</span>
@@ -95,7 +106,7 @@ export default function Hero({ openLinkModal }) {
             <div className="contact-chip" onClick={() => handleCopy('8271565060', 'phone')}>
               <PhoneCall size={14} className="chip-icon" />
               <span>8271565060</span>
-              {copiedPhone ? <Check size={14} className="copy-success" /> : <Copy size={14} className="copy-icon" />}
+              {copiedPhone ? <Check size={14} className="copy-success" /> : <Copy size={14} />}
             </div>
           </div>
         </div>

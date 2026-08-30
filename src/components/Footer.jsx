@@ -53,7 +53,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="copyright-text">
-            © {new Date().getFullYear()} <strong>Md Hasnain Imam</strong>. All Rights Reserved. Built with React & Modern Web Tech.
+            © {new Date().getFullYear()} <strong>Md Hasnain Imam</strong> (<a href="https://imam.skoriyatech.com/" style={{ color: 'var(--accent-cyan)', textDecoration: 'none' }}>imam.skoriyatech.com</a>). All Rights Reserved. Built with React & Modern Web Tech.
           </p>
 
           <button className="scroll-top-btn" onClick={scrollToTop} title="Back to top">
